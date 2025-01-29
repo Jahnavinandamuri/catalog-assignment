@@ -4,7 +4,7 @@ function decodeValue(value, base) {
 
 function lagrangeInterpolation(decodedValues) {  
     let numValues = decodedValues.length;  
-    let c = 0; // Initialize constant term  
+    let c = 0; 
 
     // Looping through each point to apply Lagrange's formula  
     for (let i = 0; i < numValues; i++) {  
@@ -18,10 +18,10 @@ function lagrangeInterpolation(decodedValues) {
                 term *= (0 - xj) / (xi - xj); // Lagrange term  
             }  
         }  
-        c += term; // Summing the terms to compute constant  
+        c += term; 
     }  
 
-    return c; // Final constant term  
+    return c; 
 }  
 
 function main(jsonInput) {  
@@ -30,7 +30,6 @@ function main(jsonInput) {
 
     const decodedValues = [];  
 
-    // Now we adapt the loop to check for actual existing keys  
     for (let i = 0; i <= n; i++) {  
         const rootInfo = data[i]; 
         if (rootInfo) { 
