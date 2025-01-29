@@ -1,0 +1,2 @@
+The constant term c for 1st input is: 3
+The constant term c for 2nd input is: 906604262325909300000
